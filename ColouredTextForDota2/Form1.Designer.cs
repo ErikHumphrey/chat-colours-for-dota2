@@ -51,11 +51,6 @@
             this.lblColorRose = new System.Windows.Forms.Label();
             this.lblColorBlue = new System.Windows.Forms.Label();
             this.lblColorOlive = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
             this.btnAbout = new System.Windows.Forms.Button();
             this.panel18 = new System.Windows.Forms.Panel();
             this.lblColonBlack = new System.Windows.Forms.Label();
@@ -64,13 +59,14 @@
             this.picHeroSmall = new System.Windows.Forms.PictureBox();
             this.lblPreviewTextBlack = new System.Windows.Forms.Label();
             this.lblColorGrey = new System.Windows.Forms.Label();
+            this.btnHelp = new System.Windows.Forms.Button();
             this.panel18.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picHeroSmall)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCopyToClipboard
             // 
-            this.btnCopyToClipboard.Location = new System.Drawing.Point(1166, 144);
+            this.btnCopyToClipboard.Location = new System.Drawing.Point(484, 172);
             this.btnCopyToClipboard.Name = "btnCopyToClipboard";
             this.btnCopyToClipboard.Size = new System.Drawing.Size(115, 23);
             this.btnCopyToClipboard.TabIndex = 12;
@@ -80,7 +76,7 @@
             // 
             // btnClearTextEntry
             // 
-            this.btnClearTextEntry.Location = new System.Drawing.Point(1064, 144);
+            this.btnClearTextEntry.Location = new System.Drawing.Point(382, 172);
             this.btnClearTextEntry.Name = "btnClearTextEntry";
             this.btnClearTextEntry.Size = new System.Drawing.Size(96, 23);
             this.btnClearTextEntry.TabIndex = 30;
@@ -94,7 +90,7 @@
             this.txtUserTextEntry.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtUserTextEntry.Font = new System.Drawing.Font("Hypatia Sans Pro Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.txtUserTextEntry.ForeColor = System.Drawing.Color.Black;
-            this.txtUserTextEntry.Location = new System.Drawing.Point(774, 53);
+            this.txtUserTextEntry.Location = new System.Drawing.Point(92, 81);
             this.txtUserTextEntry.MaxLength = 300;
             this.txtUserTextEntry.Multiline = true;
             this.txtUserTextEntry.Name = "txtUserTextEntry";
@@ -107,7 +103,7 @@
             this.lblPreviewText.BackColor = System.Drawing.Color.Transparent;
             this.lblPreviewText.Font = new System.Drawing.Font("Hypatia Sans Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPreviewText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(235)))), ((int)(((byte)(202)))));
-            this.lblPreviewText.Location = new System.Drawing.Point(39, 237);
+            this.lblPreviewText.Location = new System.Drawing.Point(20, 237);
             this.lblPreviewText.Name = "lblPreviewText";
             this.lblPreviewText.Size = new System.Drawing.Size(514, 85);
             this.lblPreviewText.TabIndex = 35;
@@ -118,7 +114,7 @@
             this.lblHeroName.BackColor = System.Drawing.Color.Transparent;
             this.lblHeroName.Font = new System.Drawing.Font("Hypatia Sans Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHeroName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(116)))), ((int)(((byte)(253)))));
-            this.lblHeroName.Location = new System.Drawing.Point(996, 182);
+            this.lblHeroName.Location = new System.Drawing.Point(344, 215);
             this.lblHeroName.Name = "lblHeroName";
             this.lblHeroName.Size = new System.Drawing.Size(115, 21);
             this.lblHeroName.TabIndex = 36;
@@ -127,7 +123,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(762, 307);
+            this.label2.Location = new System.Drawing.Point(110, 340);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(401, 13);
             this.label2.TabIndex = 38;
@@ -137,7 +133,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(668, 188);
+            this.label3.Location = new System.Drawing.Point(16, 221);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(111, 13);
             this.label3.TabIndex = 39;
@@ -147,7 +143,7 @@
             // 
             this.lblColorWhite.BackColor = System.Drawing.Color.White;
             this.lblColorWhite.Font = new System.Drawing.Font("Hypatia Sans Pro Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblColorWhite.Location = new System.Drawing.Point(1134, -1);
+            this.lblColorWhite.Location = new System.Drawing.Point(81, 27);
             this.lblColorWhite.Name = "lblColorWhite";
             this.lblColorWhite.Size = new System.Drawing.Size(81, 28);
             this.lblColorWhite.TabIndex = 41;
@@ -185,7 +181,7 @@
             this.lblColorLimegreen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(254)))), ((int)(((byte)(64)))));
             this.lblColorLimegreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblColorLimegreen.Font = new System.Drawing.Font("Hypatia Sans Pro Light", 11F);
-            this.lblColorLimegreen.Location = new System.Drawing.Point(810, -1);
+            this.lblColorLimegreen.Location = new System.Drawing.Point(405, 27);
             this.lblColorLimegreen.Name = "lblColorLimegreen";
             this.lblColorLimegreen.Size = new System.Drawing.Size(81, 28);
             this.lblColorLimegreen.TabIndex = 44;
@@ -211,7 +207,7 @@
             this.lblColorMintgreen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(250)))), ((int)(((byte)(98)))));
             this.lblColorMintgreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblColorMintgreen.Font = new System.Drawing.Font("Hypatia Sans Pro Light", 11F);
-            this.lblColorMintgreen.Location = new System.Drawing.Point(729, -1);
+            this.lblColorMintgreen.Location = new System.Drawing.Point(486, 27);
             this.lblColorMintgreen.Name = "lblColorMintgreen";
             this.lblColorMintgreen.Size = new System.Drawing.Size(81, 28);
             this.lblColorMintgreen.TabIndex = 45;
@@ -250,7 +246,7 @@
             this.lblColorYellow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(242)))), ((int)(((byte)(79)))));
             this.lblColorYellow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblColorYellow.Font = new System.Drawing.Font("Hypatia Sans Pro Light", 11F);
-            this.lblColorYellow.Location = new System.Drawing.Point(648, -1);
+            this.lblColorYellow.Location = new System.Drawing.Point(567, 27);
             this.lblColorYellow.Name = "lblColorYellow";
             this.lblColorYellow.Size = new System.Drawing.Size(81, 28);
             this.lblColorYellow.TabIndex = 48;
@@ -277,7 +273,7 @@
             this.lblColorFerngreen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(127)))), ((int)(((byte)(64)))));
             this.lblColorFerngreen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblColorFerngreen.Font = new System.Drawing.Font("Hypatia Sans Pro Light", 11F);
-            this.lblColorFerngreen.Location = new System.Drawing.Point(891, -1);
+            this.lblColorFerngreen.Location = new System.Drawing.Point(324, 27);
             this.lblColorFerngreen.Name = "lblColorFerngreen";
             this.lblColorFerngreen.Size = new System.Drawing.Size(81, 28);
             this.lblColorFerngreen.TabIndex = 50;
@@ -316,7 +312,7 @@
             this.lblColorBlue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(254)))));
             this.lblColorBlue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblColorBlue.Font = new System.Drawing.Font("Hypatia Sans Pro Light", 11F);
-            this.lblColorBlue.Location = new System.Drawing.Point(1053, -1);
+            this.lblColorBlue.Location = new System.Drawing.Point(162, 27);
             this.lblColorBlue.Name = "lblColorBlue";
             this.lblColorBlue.Size = new System.Drawing.Size(81, 28);
             this.lblColorBlue.TabIndex = 53;
@@ -329,7 +325,7 @@
             this.lblColorOlive.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(124)))), ((int)(((byte)(0)))));
             this.lblColorOlive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblColorOlive.Font = new System.Drawing.Font("Hypatia Sans Pro Light", 11F);
-            this.lblColorOlive.Location = new System.Drawing.Point(972, -1);
+            this.lblColorOlive.Location = new System.Drawing.Point(243, 27);
             this.lblColorOlive.Name = "lblColorOlive";
             this.lblColorOlive.Size = new System.Drawing.Size(81, 28);
             this.lblColorOlive.TabIndex = 54;
@@ -337,58 +333,9 @@
             this.lblColorOlive.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblColorOlive.Click += new System.EventHandler(this.lblColorOlive_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(21, 53);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 16);
-            this.label1.TabIndex = 55;
-            this.label1.Text = "Instructions:";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(21, 71);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(441, 13);
-            this.label17.TabIndex = 56;
-            this.label17.Text = "Select a colour from the top of the window then type the text that you want to be" +
-    " that colour.";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(21, 93);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(495, 13);
-            this.label18.TabIndex = 57;
-            this.label18.Text = "You can also type the colour\'s name in brackets to do it manually. You don\'t need" +
-    " to close the brackets.";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(21, 137);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(631, 13);
-            this.label19.TabIndex = 58;
-            this.label19.Text = "Right now, the preview at the bottom right does not preview the colour of your en" +
-    "tire message. It\'s not flawless, so just test it in-game!";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(21, 115);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(293, 13);
-            this.label20.TabIndex = 59;
-            this.label20.Text = "Just click \"Copy to Clipboard\" and paste the text into Dota 2!";
-            // 
             // btnAbout
             // 
-            this.btnAbout.Location = new System.Drawing.Point(12, 309);
+            this.btnAbout.Location = new System.Drawing.Point(7, 372);
             this.btnAbout.Name = "btnAbout";
             this.btnAbout.Size = new System.Drawing.Size(75, 23);
             this.btnAbout.TabIndex = 61;
@@ -404,7 +351,7 @@
             this.panel18.Controls.Add(this.lblHeroNameBlack);
             this.panel18.Controls.Add(this.picHeroSmall);
             this.panel18.Controls.Add(this.lblPreviewTextBlack);
-            this.panel18.Location = new System.Drawing.Point(671, 204);
+            this.panel18.Location = new System.Drawing.Point(19, 237);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(610, 100);
             this.panel18.TabIndex = 37;
@@ -471,7 +418,7 @@
             // 
             this.lblColorGrey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
             this.lblColorGrey.Font = new System.Drawing.Font("Hypatia Sans Pro Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblColorGrey.Location = new System.Drawing.Point(1215, -1);
+            this.lblColorGrey.Location = new System.Drawing.Point(0, 27);
             this.lblColorGrey.Name = "lblColorGrey";
             this.lblColorGrey.Size = new System.Drawing.Size(81, 28);
             this.lblColorGrey.TabIndex = 62;
@@ -479,18 +426,24 @@
             this.lblColorGrey.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblColorGrey.Click += new System.EventHandler(this.lblColorGrey_Click);
             // 
+            // btnHelp
+            // 
+            this.btnHelp.Location = new System.Drawing.Point(88, 372);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(75, 23);
+            this.btnHelp.TabIndex = 63;
+            this.btnHelp.Text = "Help";
+            this.btnHelp.UseVisualStyleBackColor = true;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
+            // 
             // frmDotaColor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1296, 342);
+            this.ClientSize = new System.Drawing.Size(647, 400);
+            this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.lblColorGrey);
             this.Controls.Add(this.btnAbout);
-            this.Controls.Add(this.label20);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.label18);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblColorOlive);
             this.Controls.Add(this.lblColorBlue);
             this.Controls.Add(this.lblColorRose);
@@ -559,13 +512,9 @@
         private System.Windows.Forms.Label lblColorRose;
         private System.Windows.Forms.Label lblColorBlue;
         private System.Windows.Forms.Label lblColorOlive;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Button btnAbout;
         private System.Windows.Forms.Label lblColorGrey;
+        private System.Windows.Forms.Button btnHelp;
     }
 }
 

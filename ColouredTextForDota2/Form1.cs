@@ -34,7 +34,7 @@ namespace ColouredTextForDota2
                 .Replace("[limegreen]", "")
                 .Replace("[ferngreen]", "")
                 .Replace("[olive]", "")
-                .Replace("[blue]", "")
+                .Replace("[blue]", "")
                 .Replace("[white]", "")
                 .Replace("[grey]", "");
             Clipboard.Clear();    // Clear if any old value is there in Clipboard        
@@ -217,6 +217,10 @@ namespace ColouredTextForDota2
             aboutWindow.ShowDialog();
         }
 
-
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            frmHelp helpWindow = new frmHelp();
+            helpWindow.ShowDialog();
+        }
     }
 }
