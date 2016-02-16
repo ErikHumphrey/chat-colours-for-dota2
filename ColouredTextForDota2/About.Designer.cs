@@ -32,11 +32,11 @@
             this.lblAttribution = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnSourceCode = new System.Windows.Forms.Button();
+            this.btnDonate = new System.Windows.Forms.Button();
             this.picSteam = new System.Windows.Forms.PictureBox();
             this.picReddit = new System.Windows.Forms.PictureBox();
             this.picGitHub = new System.Windows.Forms.PictureBox();
-            this.btnSourceCode = new System.Windows.Forms.Button();
-            this.btnDonate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picSteam)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picReddit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picGitHub)).BeginInit();
@@ -81,6 +81,26 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "based off of Colorful Dota 2 by Summ";
             // 
+            // btnSourceCode
+            // 
+            this.btnSourceCode.Location = new System.Drawing.Point(67, 148);
+            this.btnSourceCode.Name = "btnSourceCode";
+            this.btnSourceCode.Size = new System.Drawing.Size(91, 23);
+            this.btnSourceCode.TabIndex = 7;
+            this.btnSourceCode.Text = "Source code";
+            this.btnSourceCode.UseVisualStyleBackColor = true;
+            this.btnSourceCode.Click += new System.EventHandler(this.btnSourceCode_Click);
+            // 
+            // btnDonate
+            // 
+            this.btnDonate.Location = new System.Drawing.Point(164, 148);
+            this.btnDonate.Name = "btnDonate";
+            this.btnDonate.Size = new System.Drawing.Size(116, 23);
+            this.btnDonate.TabIndex = 8;
+            this.btnDonate.Text = "Donate via PayPal";
+            this.btnDonate.UseVisualStyleBackColor = true;
+            this.btnDonate.Click += new System.EventHandler(this.btnDonate_Click);
+            // 
             // picSteam
             // 
             this.picSteam.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -116,26 +136,6 @@
             this.picGitHub.TabIndex = 4;
             this.picGitHub.TabStop = false;
             this.picGitHub.Click += new System.EventHandler(this.picGitHub_Click);
-            // 
-            // btnSourceCode
-            // 
-            this.btnSourceCode.Location = new System.Drawing.Point(67, 148);
-            this.btnSourceCode.Name = "btnSourceCode";
-            this.btnSourceCode.Size = new System.Drawing.Size(91, 23);
-            this.btnSourceCode.TabIndex = 7;
-            this.btnSourceCode.Text = "Source code";
-            this.btnSourceCode.UseVisualStyleBackColor = true;
-            this.btnSourceCode.Click += new System.EventHandler(this.btnSourceCode_Click);
-            // 
-            // btnDonate
-            // 
-            this.btnDonate.Location = new System.Drawing.Point(164, 148);
-            this.btnDonate.Name = "btnDonate";
-            this.btnDonate.Size = new System.Drawing.Size(116, 23);
-            this.btnDonate.TabIndex = 8;
-            this.btnDonate.Text = "Donate via PayPal";
-            this.btnDonate.UseVisualStyleBackColor = true;
-            this.btnDonate.Click += new System.EventHandler(this.btnDonate_Click);
             // 
             // frmAbout
             // 

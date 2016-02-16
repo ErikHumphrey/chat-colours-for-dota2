@@ -34,8 +34,8 @@
             this.txtUserTextEntry = new System.Windows.Forms.TextBox();
             this.lblPreviewText = new System.Windows.Forms.Label();
             this.lblHeroName = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblNotice = new System.Windows.Forms.Label();
+            this.lblPreviewMessageSize = new System.Windows.Forms.Label();
             this.lblColorWhite = new System.Windows.Forms.Label();
             this.lblColorGold = new System.Windows.Forms.Label();
             this.lblColorOrange = new System.Windows.Forms.Label();
@@ -52,7 +52,7 @@
             this.lblColorBlue = new System.Windows.Forms.Label();
             this.lblColorOlive = new System.Windows.Forms.Label();
             this.btnAbout = new System.Windows.Forms.Button();
-            this.panel18 = new System.Windows.Forms.Panel();
+            this.pnlPreview = new System.Windows.Forms.Panel();
             this.lblColonBlack = new System.Windows.Forms.Label();
             this.lblColon = new System.Windows.Forms.Label();
             this.lblHeroNameBlack = new System.Windows.Forms.Label();
@@ -60,7 +60,8 @@
             this.lblPreviewTextBlack = new System.Windows.Forms.Label();
             this.lblColorGrey = new System.Windows.Forms.Label();
             this.btnHelp = new System.Windows.Forms.Button();
-            this.panel18.SuspendLayout();
+            this.btnCheckForUpdates = new System.Windows.Forms.Button();
+            this.pnlPreview.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picHeroSmall)).BeginInit();
             this.SuspendLayout();
             // 
@@ -120,24 +121,24 @@
             this.lblHeroName.TabIndex = 36;
             this.lblHeroName.Text = "Crystal Maiden";
             // 
-            // label2
+            // lblNotice
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(110, 340);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(401, 13);
-            this.label2.TabIndex = 38;
-            this.label2.Text = "If your entire message does not appear here, chances are it will not appear in-ga" +
+            this.lblNotice.AutoSize = true;
+            this.lblNotice.Location = new System.Drawing.Point(110, 340);
+            this.lblNotice.Name = "lblNotice";
+            this.lblNotice.Size = new System.Drawing.Size(401, 13);
+            this.lblNotice.TabIndex = 38;
+            this.lblNotice.Text = "If your entire message does not appear here, chances are it will not appear in-ga" +
     "me.";
             // 
-            // label3
+            // lblPreviewMessageSize
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(16, 221);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(111, 13);
-            this.label3.TabIndex = 39;
-            this.label3.Text = "Preview message size";
+            this.lblPreviewMessageSize.AutoSize = true;
+            this.lblPreviewMessageSize.Location = new System.Drawing.Point(16, 221);
+            this.lblPreviewMessageSize.Name = "lblPreviewMessageSize";
+            this.lblPreviewMessageSize.Size = new System.Drawing.Size(111, 13);
+            this.lblPreviewMessageSize.TabIndex = 39;
+            this.lblPreviewMessageSize.Text = "Preview message size";
             // 
             // lblColorWhite
             // 
@@ -343,18 +344,18 @@
             this.btnAbout.UseVisualStyleBackColor = true;
             this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
             // 
-            // panel18
+            // pnlPreview
             // 
-            this.panel18.BackgroundImage = global::ColouredTextForDota2.Properties.Resources.gameBackground1;
-            this.panel18.Controls.Add(this.lblColonBlack);
-            this.panel18.Controls.Add(this.lblColon);
-            this.panel18.Controls.Add(this.lblHeroNameBlack);
-            this.panel18.Controls.Add(this.picHeroSmall);
-            this.panel18.Controls.Add(this.lblPreviewTextBlack);
-            this.panel18.Location = new System.Drawing.Point(19, 237);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(610, 100);
-            this.panel18.TabIndex = 37;
+            this.pnlPreview.BackgroundImage = global::ColouredTextForDota2.Properties.Resources.gameBackground1;
+            this.pnlPreview.Controls.Add(this.lblColonBlack);
+            this.pnlPreview.Controls.Add(this.lblColon);
+            this.pnlPreview.Controls.Add(this.lblHeroNameBlack);
+            this.pnlPreview.Controls.Add(this.picHeroSmall);
+            this.pnlPreview.Controls.Add(this.lblPreviewTextBlack);
+            this.pnlPreview.Location = new System.Drawing.Point(19, 237);
+            this.pnlPreview.Name = "pnlPreview";
+            this.pnlPreview.Size = new System.Drawing.Size(610, 100);
+            this.pnlPreview.TabIndex = 37;
             // 
             // lblColonBlack
             // 
@@ -436,11 +437,22 @@
             this.btnHelp.UseVisualStyleBackColor = true;
             this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
+            // btnCheckForUpdates
+            // 
+            this.btnCheckForUpdates.Location = new System.Drawing.Point(166, 372);
+            this.btnCheckForUpdates.Name = "btnCheckForUpdates";
+            this.btnCheckForUpdates.Size = new System.Drawing.Size(129, 23);
+            this.btnCheckForUpdates.TabIndex = 64;
+            this.btnCheckForUpdates.Text = "Check for updates";
+            this.btnCheckForUpdates.UseVisualStyleBackColor = true;
+            this.btnCheckForUpdates.Click += new System.EventHandler(this.btnCheckForUpdates_Click);
+            // 
             // frmDotaColor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(647, 400);
+            this.Controls.Add(this.btnCheckForUpdates);
             this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.lblColorGrey);
             this.Controls.Add(this.btnAbout);
@@ -459,9 +471,9 @@
             this.Controls.Add(this.lblColorOrange);
             this.Controls.Add(this.lblColorGold);
             this.Controls.Add(this.lblColorWhite);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.panel18);
+            this.Controls.Add(this.lblPreviewMessageSize);
+            this.Controls.Add(this.lblNotice);
+            this.Controls.Add(this.pnlPreview);
             this.Controls.Add(this.lblPreviewText);
             this.Controls.Add(this.lblHeroName);
             this.Controls.Add(this.txtUserTextEntry);
@@ -472,11 +484,11 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmDotaColor";
-            this.Text = "Chat Colours for Dota 2";
+            this.Text = "Chat Colors for Dota 2";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmDotaColor_FormClosing);
             this.Load += new System.EventHandler(this.frmDotaColor_Load);
-            this.panel18.ResumeLayout(false);
-            this.panel18.PerformLayout();
+            this.pnlPreview.ResumeLayout(false);
+            this.pnlPreview.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picHeroSmall)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -489,14 +501,14 @@
         private System.Windows.Forms.TextBox txtUserTextEntry;
         private System.Windows.Forms.Label lblPreviewText;
         private System.Windows.Forms.Label lblHeroName;
-        private System.Windows.Forms.Panel panel18;
+        private System.Windows.Forms.Panel pnlPreview;
         private System.Windows.Forms.Label lblColon;
         private System.Windows.Forms.PictureBox picHeroSmall;
         private System.Windows.Forms.Label lblHeroNameBlack;
         private System.Windows.Forms.Label lblColonBlack;
         private System.Windows.Forms.Label lblPreviewTextBlack;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblNotice;
+        private System.Windows.Forms.Label lblPreviewMessageSize;
         private System.Windows.Forms.Label lblColorWhite;
         private System.Windows.Forms.Label lblColorGold;
         private System.Windows.Forms.Label lblColorOrange;
@@ -515,6 +527,7 @@
         private System.Windows.Forms.Button btnAbout;
         private System.Windows.Forms.Label lblColorGrey;
         private System.Windows.Forms.Button btnHelp;
+        private System.Windows.Forms.Button btnCheckForUpdates;
     }
 }
 

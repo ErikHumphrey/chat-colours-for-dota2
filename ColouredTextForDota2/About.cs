@@ -39,7 +39,7 @@ namespace ColouredTextForDota2
 
         private void btnDonate_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("http://paypal.me/ErikHumphrey");
+            System.Diagnostics.Process.Start("https://paypal.me/ErikHumphrey");
         }
     }
 }

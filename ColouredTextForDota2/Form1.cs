@@ -20,6 +20,9 @@ namespace ColouredTextForDota2
         private PrivateFontCollection fonts = new PrivateFontCollection();
 
         Font fontNormal;
+        Font fontBold;
+        Font fontSemibold;
+        Font fontLight;
 
         public frmDotaColor()
         {
@@ -31,9 +34,28 @@ namespace ColouredTextForDota2
             uint dummy = 0;
             fonts.AddMemoryFont(fontPtr, Properties.Resources.chat.Length);
             AddFontMemResourceEx(fontPtr, (uint)Properties.Resources.chat.Length, IntPtr.Zero, ref dummy);
-            System.Runtime.InteropServices.Marshal.FreeCoTaskMem(fontPtr);
 
             fontNormal = new Font(fonts.Families[0], 12F, FontStyle.Bold);
+
+            fontData = Properties.Resources.chatBold;
+            fonts.AddMemoryFont(fontPtr, Properties.Resources.chatBold.Length);
+            AddFontMemResourceEx(fontPtr, (uint)Properties.Resources.chatBold.Length, IntPtr.Zero, ref dummy);
+
+            fontBold = new Font(fonts.Families[0], 12F, FontStyle.Bold);
+
+            fontData = Properties.Resources.chatSemibold;
+            fonts.AddMemoryFont(fontPtr, Properties.Resources.chatSemibold.Length);
+            AddFontMemResourceEx(fontPtr, (uint)Properties.Resources.chatSemibold.Length, IntPtr.Zero, ref dummy);
+
+            fontSemibold = new Font(fonts.Families[0], 12F, FontStyle.Bold);
+
+            fontData = Properties.Resources.chatLight;
+            fonts.AddMemoryFont(fontPtr, Properties.Resources.chatLight.Length);
+            AddFontMemResourceEx(fontPtr, (uint)Properties.Resources.chatLight.Length, IntPtr.Zero, ref dummy);
+
+            fontLight = new Font(fonts.Families[0], 11F, FontStyle.Bold);
+
+            System.Runtime.InteropServices.Marshal.FreeCoTaskMem(fontPtr);
         }
 
         private void btnCopyToClipboard_Click(object sender, EventArgs e)
@@ -63,7 +85,8 @@ namespace ColouredTextForDota2
 
         private void frmDotaColor_Load(object sender, EventArgs e)
         {
-            lblHeroName.Font = lblHeroNameBlack.Font = fontNormal; 
+            txtUserTextEntry.Font = fontSemibold;
+            lblHeroName.Font = lblHeroNameBlack.Font = lblPreviewText.Font = lblPreviewTextBlack.Font = fontNormal; 
 
             lblHeroName.Parent = lblHeroNameBlack;
             lblHeroName.Location = new Point(-1, -2);
@@ -237,6 +260,11 @@ namespace ColouredTextForDota2
         {
             frmHelp helpWindow = new frmHelp();
             helpWindow.ShowDialog();
+        }
+
+        private void btnCheckForUpdates_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/ErikHumphrey/chat-colours-for-dota2/releases");
         }
     }
 }
