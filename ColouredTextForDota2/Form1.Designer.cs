@@ -345,7 +345,7 @@
             // 
             // panel18
             // 
-            this.panel18.BackgroundImage = global::ColouredTextForDota2.Properties.Resources.dota2_2016_02_16_13_16_09;
+            this.panel18.BackgroundImage = global::ColouredTextForDota2.Properties.Resources.gameBackground1;
             this.panel18.Controls.Add(this.lblColonBlack);
             this.panel18.Controls.Add(this.lblColon);
             this.panel18.Controls.Add(this.lblHeroNameBlack);
@@ -397,7 +397,7 @@
             // 
             // picHeroSmall
             // 
-            this.picHeroSmall.Image = global::ColouredTextForDota2.Properties.Resources.dota2_2016_02_16_13_19_07;
+            this.picHeroSmall.Image = global::ColouredTextForDota2.Properties.Resources.heroPortraitFrostAvalanche;
             this.picHeroSmall.Location = new System.Drawing.Point(3, 4);
             this.picHeroSmall.Name = "picHeroSmall";
             this.picHeroSmall.Size = new System.Drawing.Size(45, 26);

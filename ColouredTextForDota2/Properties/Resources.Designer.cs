@@ -61,31 +61,71 @@ namespace ColouredTextForDota2.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static System.Drawing.Bitmap dota2_2016_02_16_12_43_56 {
+        internal static byte[] chat {
             get {
-                object obj = ResourceManager.GetObject("dota2_2016-02-16_12-43-56", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                object obj = ResourceManager.GetObject("chat", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chatBlack {
+            get {
+                object obj = ResourceManager.GetObject("chatBlack", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chatBold {
+            get {
+                object obj = ResourceManager.GetObject("chatBold", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chatExtraLight {
+            get {
+                object obj = ResourceManager.GetObject("chatExtraLight", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chatLight {
+            get {
+                object obj = ResourceManager.GetObject("chatLight", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] chatSemibold {
+            get {
+                object obj = ResourceManager.GetObject("chatSemibold", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap dota2_2016_02_16_13_16_09 {
+        internal static System.Drawing.Bitmap gameBackground1 {
             get {
-                object obj = ResourceManager.GetObject("dota2_2016-02-16_13-16-09", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap dota2_2016_02_16_13_19_07 {
-            get {
-                object obj = ResourceManager.GetObject("dota2_2016-02-16_13-19-07", resourceCulture);
+                object obj = ResourceManager.GetObject("gameBackground1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,6 +143,16 @@ namespace ColouredTextForDota2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap heroPortraitFrostAvalanche {
+            get {
+                object obj = ResourceManager.GetObject("heroPortraitFrostAvalanche", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap snoo {
             get {
                 object obj = ResourceManager.GetObject("snoo", resourceCulture);
@@ -113,9 +163,9 @@ namespace ColouredTextForDota2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Steam_Icon_2014 {
+        internal static System.Drawing.Bitmap steamIcon {
             get {
-                object obj = ResourceManager.GetObject("Steam_Icon_2014", resourceCulture);
+                object obj = ResourceManager.GetObject("steamIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

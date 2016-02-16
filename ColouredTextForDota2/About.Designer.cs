@@ -84,7 +84,7 @@
             // picSteam
             // 
             this.picSteam.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picSteam.Image = global::ColouredTextForDota2.Properties.Resources.Steam_Icon_2014;
+            this.picSteam.Image = global::ColouredTextForDota2.Properties.Resources.steamIcon;
             this.picSteam.Location = new System.Drawing.Point(202, 94);
             this.picSteam.Name = "picSteam";
             this.picSteam.Size = new System.Drawing.Size(49, 40);
