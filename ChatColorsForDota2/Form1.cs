@@ -13,6 +13,7 @@ namespace ColouredTextForDota2
 {
     public partial class frmDotaColor : Form
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1060:MovePInvokesToNativeMethodsClass")]
         [System.Runtime.InteropServices.DllImport("gdi32.dll")]
         private static extern IntPtr AddFontMemResourceEx(IntPtr pbFont, uint cbFont,
     IntPtr pdv, [System.Runtime.InteropServices.In] ref uint pcFonts);
