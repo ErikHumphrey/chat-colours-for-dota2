@@ -1,4 +1,4 @@
-/*** uncss> filename: assets/unclean.css ***/
+﻿/*** uncss> filename: assets/unclean.css ***/
 
 /* Tèsèvè - A simple static webserver, in an app.
  *
@@ -130,7 +130,7 @@ header h1:before {
   height: 12.8rem;
   margin: 0 auto 1.6rem;
   z-index: 10;
-  background: transparent url("./img/icon.png") center no-repeat;
+  background: transparent url("https://a.pomf.cat/quyoqe.png") center no-repeat;
   background-size: contain;
 }
 
