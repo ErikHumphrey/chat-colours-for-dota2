@@ -134,7 +134,40 @@ header h1:before {
   background-size: contain;
 }
 
-header 
+
+
+header h1 strong {
+  display: block;
+  font: 100 6rem/1 "FiraSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+header h1 span {
+  display: block;
+  font: bold 1.6rem/1.25 "FiraSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+.screenshot {
+  margin: 0 auto -10rem;
+  background: #333;
+}
+
+.screenshot figure {
+  position: relative;
+  max-width: 90%;
+  top: -14rem;
+  margin: 0 auto;
+}
+
+.screenshot figure img {
+  display: block;
+  width: 100%;
+  max-width: 64rem;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 0 2rem rgba(0,0,0,0.25);
+  box-shadow: 0 0 2rem rgba(0,0,0,0.25);
+}
 
 .links {
   margin: 0 auto;
