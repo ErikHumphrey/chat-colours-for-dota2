@@ -54,39 +54,35 @@ namespace ColouredTextForDota2
             string strClip = Clipboard.GetText(); // Get text from Clipboard
         }
 
-        private void frmDotaColor_Load(object sender, EventArgs e)
+        private Font fontBundler(byte[] fontData, float size, FontStyle style)
         {
-            byte[] fontData = Properties.Resources.chat;
             IntPtr fontPtr = System.Runtime.InteropServices.Marshal.AllocCoTaskMem(fontData.Length);
             System.Runtime.InteropServices.Marshal.Copy(fontData, 0, fontPtr, fontData.Length);
             uint dummy = 0;
-            fonts.AddMemoryFont(fontPtr, Properties.Resources.chat.Length);
-            AddFontMemResourceEx(fontPtr, (uint)Properties.Resources.chat.Length, IntPtr.Zero, ref dummy);
+            fonts.AddMemoryFont(fontPtr, fontData.Length);
+            AddFontMemResourceEx(fontPtr, (uint)fontData.Length, IntPtr.Zero, ref dummy);
 
-            fontNormal = new Font(fonts.Families[0], 12F, FontStyle.Bold);
+            return new Font(fonts.Families[0], size, style);
+        }
 
-            fontData = Properties.Resources.chatBold;
-            fonts.AddMemoryFont(fontPtr, Properties.Resources.chatBold.Length);
-            AddFontMemResourceEx(fontPtr, (uint)Properties.Resources.chatBold.Length, IntPtr.Zero, ref dummy);
-
-            fontBold = new Font(fonts.Families[0], 12F, FontStyle.Bold);
-
-            fontData = Properties.Resources.chatSemibold;
-            fonts.AddMemoryFont(fontPtr, Properties.Resources.chatSemibold.Length);
-            AddFontMemResourceEx(fontPtr, (uint)Properties.Resources.chatSemibold.Length, IntPtr.Zero, ref dummy);
-
-            fontSemibold = new Font(fonts.Families[0], 12F, FontStyle.Bold);
-
-            fontData = Properties.Resources.chatLight;
-            fonts.AddMemoryFont(fontPtr, Properties.Resources.chatLight.Length);
-            AddFontMemResourceEx(fontPtr, (uint)Properties.Resources.chatLight.Length, IntPtr.Zero, ref dummy);
-
-            fontLight = new Font(fonts.Families[0], 11F, FontStyle.Bold);
-
-            System.Runtime.InteropServices.Marshal.FreeCoTaskMem(fontPtr);
+        private void frmDotaColor_Load(object sender, EventArgs e)
+        {
+            fontNormal = fontBundler(Properties.Resources.chat, 12F, FontStyle.Bold);
+            fontBold = fontBundler(Properties.Resources.chatBold, 12f, FontStyle.Bold);
+            fontSemibold = fontBundler(Properties.Resources.chatSemibold, 12F, FontStyle.Bold);
+            fontLight = fontBundler(Properties.Resources.chatLight, 11F, FontStyle.Regular);
 
             txtUserTextEntry.Font = fontSemibold;
-            lblHeroName.Font = lblHeroNameBlack.Font = lblPreviewText.Font = lblPreviewTextBlack.Font = fontNormal; 
+            lblHeroName.Font = lblHeroNameBlack.Font = lblPreviewText.Font = lblPreviewTextBlack.Font = fontNormal;
+
+            List<Label> lbls = this.Controls.OfType<Label>().ToList();
+            foreach (var lbl in lbls)
+            {
+                if (lbl.Name.StartsWith("lblColor"))
+                {
+                    lbl.Font = fontLight;
+                }
+            }
 
             lblHeroName.Parent = lblHeroNameBlack;
             lblHeroName.Location = new Point(-1, -2);

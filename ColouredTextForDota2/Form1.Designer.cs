@@ -409,7 +409,7 @@
             // lblPreviewTextBlack
             // 
             this.lblPreviewTextBlack.BackColor = System.Drawing.Color.Transparent;
-            this.lblPreviewTextBlack.Font = new System.Drawing.Font("Hypatia Sans Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreviewTextBlack.Font = new System.Drawing.Font("Hypatia Sans Pro", 12F, System.Drawing.FontStyle.Bold);
             this.lblPreviewTextBlack.Location = new System.Drawing.Point(59, 6);
             this.lblPreviewTextBlack.Name = "lblPreviewTextBlack";
             this.lblPreviewTextBlack.Size = new System.Drawing.Size(514, 85);
