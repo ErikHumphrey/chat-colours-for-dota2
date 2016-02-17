@@ -1,0 +1,308 @@
+/* Tèsèvè - A simple static webserver, in an app.
+ *
+ * STYLUS/CSS Document - /assets/stylus/styles.styl
+ *
+ * coded by leny@flatLand!
+ * started à 11/09/2015
+ */
+
+// imports
+@import "kouto-swiss"
+
+// resets
+meyer-reset()
+box-sizing-reset()
+
+// fonts
+font-face( "Glyphs", "./fonts/glyphs/glyphs", formats: eot svg ttf woff )
+Glyphs = "Glyphs"
+font-face( "FiraSans", "./fonts/firasans/FiraSans-Book", formats: eot woff )
+font-face( "FiraSans", "./fonts/firasans/FiraSans-Bold", bold, formats: eot woff )
+font-face( "FiraSans", "./fonts/firasans/FiraSans-ExtraLight", 100, formats: eot woff )
+light = 100
+FiraSans = "FiraSans", font-stack( "Helvetica" )
+
+// vars
+darkColor = #333
+lightColor = #eee
+linkColor = #9b99ff
+mainColor = #f76b1c
+
+// ----- commons
+
+sup
+    vertical-align super
+
+a
+    color linkColor
+    text-decoration none
+
+// ----- layout
+
+html
+    font normal 62.5%/1.33 FiraSans
+    -webkit-font-smoothing antialiased
+    -webkit-text-size-adjust 100%
+
+body
+    color lightColor
+
+header
+    padding 5rem 0 18rem
+    background white url( ./img/header-bcg.png ) center repeat
+    box-shadow 0 0 1rem black
+    h1
+        position relative
+        margin 0
+        color white
+        text-shadow 0 0 .6rem mainColor
+        &:before
+            content ""
+            position relative
+            display block
+            size 12.8rem
+            margin 0 auto 1.6rem
+            z-index 10
+            background transparent url( ./img/icon.png ) center no-repeat
+            background-size contain
+        &:after
+            content ""
+            display block
+            position absolute
+            size 12.8rem
+            top 0
+            left 50%
+            z-index 5
+            transform translateX( -50% )
+            background transparent
+            border-radius 100%
+            box-shadow 0 0 .6rem mainColor
+        strong
+            display block
+            font light 6rem/1 FiraSans
+            text-align center
+        span
+            display block
+            font bold 1.6rem/1.25 FiraSans
+            text-align center
+
+.screenshot
+    margin 0 auto -10rem
+    background darkColor
+    figure
+        position relative
+        max-width 90%
+        top -14rem
+        margin 0 auto
+        img
+            display block
+            width 100%
+            max-width 64rem
+            margin 0 auto
+            box-shadow 0 0 2rem rgba( black, .25 )
+
+.links
+    margin 0 auto
+    padding 0 0 4rem
+    background darkColor
+    h2
+        max-width 90%
+        margin 0 auto 2.4rem
+        text-align center
+        strong
+            display block
+            margin 0 auto .4rem
+            font light 2.4rem/1 FiraSans
+        span
+            display block
+            font light 1.6rem/1.33 FiraSans
+            sup
+                font-size .75em
+        a
+            display block
+            font normal 1.2rem/1.33 FiraSans
+            text-decoration none
+            &:before
+                content "("
+            &:after
+                content ")"
+    ul
+        max-width 90%
+        margin 0 auto
+        li a
+            display block
+            padding 1.6rem 0
+            border 1px solid rgba( lightColor, .5 )
+            border-radius .6rem
+            color lightColor
+            text-decoration none
+            text-align center
+            i
+                display block
+                margin 0 auto
+                font normal 4.8rem/1 Glyphs
+            strong
+                display block
+                margin 0 auto .8rem
+                font light 1.6rem/1.33 FiraSans
+            span
+                display inline-block
+                padding .8rem 1.2rem .6rem
+                background mainColor
+                border-radius .6rem
+                font normal 1.6rem/1.33 FiraSans
+                color lightColor
+            &.win
+            &.osx
+                display none
+            &.github
+                i:before
+                    content "c"
+
+.what
+    padding .1rem 0 2rem
+    background lightColor
+    h2
+        max-width 90%
+        margin 3rem auto 2.4rem
+        font light 2.4rem/1 FiraSans
+        color darkColor
+        text-align center
+    p
+        max-width 90%
+        margin 0 auto 1.4rem
+        font normal 1.4rem/1.33 FiraSans
+        color darkColor
+
+footer
+    padding .75rem 0 .5rem
+    background white url( ./img/header-bcg.png ) center repeat
+    box-shadow 0 0 1rem black
+    .cc
+        max-width 90%
+        margin 0 auto
+        font bold 1.4rem/1.25 FiraSans
+        text-shadow 0 0 .6rem mainColor
+        text-align right
+        .love
+            &:before
+                content "a"
+                font normal 1.4rem/1.25 Glyphs
+                vertical-align -.2rem
+            font-size 0
+        a
+            color mainColor
+
+// 640+
++media-query( all, min-width 40em )
+    header
+        padding 6rem 0 32rem
+
+    .screenshot
+        margin 0 auto -24rem
+        figure
+            top -28rem
+
+    .links
+        padding 0 0 8rem
+        h2
+            margin 0 auto 3.2rem
+            strong
+                margin 0 auto .8rem
+                font light 2.8rem/1 FiraSans
+            span
+                font light 2rem/1.33 FiraSans
+            a
+                font normal 1.6rem/1.33 FiraSans
+        ul
+            max-width 30rem
+            margin 0 auto
+            li a
+                padding 2.4rem 0
+                i
+                    font normal 5.6rem/1 Glyphs
+                strong
+                    margin 0 auto 1.2rem
+                    font light 2rem/1.33 FiraSans
+                span
+                    padding 1rem 1.8rem .8rem
+                    font normal 1.8rem/1.33 FiraSans
+
+    .what
+        padding .1rem 0 3rem
+        h2
+            margin 4.8rem auto 3.2rem
+            font light 3.2rem/1 FiraSans
+        p
+            margin 0 auto 2rem
+            font normal 1.6rem/1.5 FiraSans
+
+    footer
+        padding 1rem 0 .75rem
+        .cc
+            font bold 1.8rem/1.25 FiraSans
+            .love
+                &:before
+                    font normal 1.8rem/1.25 Glyphs
+                    vertical-align -.3rem
+
+// 960+
++media-query( all, min-width 60em )
+    a
+        transition all .25s ease-in-out
+        &:hover
+            color tint( linkColor, 25% )
+
+    .links
+        h2
+            span
+                font light 1.8rem/1.33 FiraSans
+            a
+                font normal 1.4rem/1.33 FiraSans
+        ul
+            max-width 96rem
+            margin 0 auto
+            clear fix
+            li
+                width 30rem
+                float left
+                a
+                    padding 2.4rem 0
+                    i
+                        font normal 5.6rem/1 Glyphs
+                    strong
+                        margin 0 auto 1.2rem
+                        font light 2rem/1.33 FiraSans
+                    span
+                        padding 1rem 1.8rem .8rem
+                        font normal 1.8rem/1.33 FiraSans
+                        transition all .25s ease-in-out
+                        &:hover
+                            background shade( mainColor, 15% )
+                    &.win
+                    &.osx
+                        display block
+                    &.win
+                        i:before
+                            content "d"
+                    &.osx
+                        i:before
+                            content "b"
+                & + li
+                    margin-left 3rem
+
+    .what
+        padding .1rem 0 10rem
+        h2
+            max-width 96rem
+            margin 6.4rem auto 4.8rem
+            font light 3.6rem/1 FiraSans
+        p
+            max-width 96rem
+            margin 0 auto 2.4rem
+            font normal 1.6rem/1.5 FiraSans
+
+    footer
+        .cc
+            max-width 96rem
+            text-align center

@@ -1,0 +1,25 @@
+{
+  "name": "teseve.github.io",
+  "description": "A simple static webserver, in an app.",
+  "version": "0.4.0",
+  "private": true,
+  "homepage": "http://teseve.github.io",
+  "author": {
+    "name": "leny",
+    "email": "info@flatland.be"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/teseve/teseve.github.io.git"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jade": "^0.15.0",
+    "grunt-contrib-stylus": "^0.22.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-csso": "^0.7.1",
+    "grunt-uncss": "^0.4.3",
+    "kouto-swiss": "^0.11.13",
+    "matchdep": "^0.3.0"
+  }
+}

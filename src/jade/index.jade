@@ -1,0 +1,75 @@
+doctype html
+html( lang="fr-BE" )
+    head
+        meta( charset="UTF-8" )/
+        title Tèsèvè - A simple static webserver, in an app.
+
+        meta( name="viewport", content="width=device-width, initial-scale=1.0, minimum-scale=1.0" )/
+
+        link( rel="stylesheet", href="assets/styles.css" )/
+
+        <!--[if lt IE 9]>
+        script( src="http://html5shiv.googlecode.com/svn/trunk/html5.js" )
+        <![endif]-->
+
+    body
+        header
+            h1
+                strong Tèsèvè
+                span A simple static webserver, in an app.
+
+        section.screenshot
+            figure
+                img( src="/assets/img/screenshot.png", alt="screenshot of Tèsèvè app" )/
+
+        section.links
+            h2
+                strong= "Version " + version
+                span
+                    | 21
+                    sup th
+                    = " "
+                    | september 2015
+                a( href="https://github.com/teseve/teseve/releases/tag/#{ version }" ) see release notes
+
+            ul
+                li
+                    a.win( href="https://github.com/teseve/teseve/releases/download/#{ version }/Teseve-#{ version }-win32-x64.zip" )
+                        i
+                        strong Windows
+                        span Download
+                li
+                    a.osx( href="https://github.com/teseve/teseve/releases/download/#{ version }/Teseve-#{ version }-mac-x64.zip" )
+                        i
+                        strong Mac OSX
+                        span Download
+                li
+                    a.github( href="https://github.com/teseve/teseve" )
+                        i
+                        strong Source Code
+                        span See on github
+
+        section.what
+            h2 What is Tèsèvè?
+
+            p
+                | Tèsèvè is a simple static webserver, powered by
+                = " "
+                a( href="http://expressjs.com", rel="external" ) express
+                | , packaged in an app (using
+                = " "
+                a( href="http://electron.atom.io", rel="external" ) electron
+                | ), for OSX and Windows.
+
+            p
+                | Download and open the app, choose a path (or drop a folder on the app), and click on the link provided by the application : a simple static server is running from the given path.
+
+        footer
+            .cc
+                | Made with
+                = " "
+                i.love love
+                = " "
+                | by
+                = " "
+                a( href="http://leny.me" ) leny
