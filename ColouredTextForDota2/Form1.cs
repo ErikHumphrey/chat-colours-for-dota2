@@ -27,35 +27,6 @@ namespace ColouredTextForDota2
         public frmDotaColor()
         {
             InitializeComponent();
-
-            byte[] fontData = Properties.Resources.chat;
-            IntPtr fontPtr = System.Runtime.InteropServices.Marshal.AllocCoTaskMem(fontData.Length);
-            System.Runtime.InteropServices.Marshal.Copy(fontData, 0, fontPtr, fontData.Length);
-            uint dummy = 0;
-            fonts.AddMemoryFont(fontPtr, Properties.Resources.chat.Length);
-            AddFontMemResourceEx(fontPtr, (uint)Properties.Resources.chat.Length, IntPtr.Zero, ref dummy);
-
-            fontNormal = new Font(fonts.Families[0], 12F, FontStyle.Bold);
-
-            fontData = Properties.Resources.chatBold;
-            fonts.AddMemoryFont(fontPtr, Properties.Resources.chatBold.Length);
-            AddFontMemResourceEx(fontPtr, (uint)Properties.Resources.chatBold.Length, IntPtr.Zero, ref dummy);
-
-            fontBold = new Font(fonts.Families[0], 12F, FontStyle.Bold);
-
-            fontData = Properties.Resources.chatSemibold;
-            fonts.AddMemoryFont(fontPtr, Properties.Resources.chatSemibold.Length);
-            AddFontMemResourceEx(fontPtr, (uint)Properties.Resources.chatSemibold.Length, IntPtr.Zero, ref dummy);
-
-            fontSemibold = new Font(fonts.Families[0], 12F, FontStyle.Bold);
-
-            fontData = Properties.Resources.chatLight;
-            fonts.AddMemoryFont(fontPtr, Properties.Resources.chatLight.Length);
-            AddFontMemResourceEx(fontPtr, (uint)Properties.Resources.chatLight.Length, IntPtr.Zero, ref dummy);
-
-            fontLight = new Font(fonts.Families[0], 11F, FontStyle.Bold);
-
-            System.Runtime.InteropServices.Marshal.FreeCoTaskMem(fontPtr);
         }
 
         private void btnCopyToClipboard_Click(object sender, EventArgs e)
@@ -85,6 +56,35 @@ namespace ColouredTextForDota2
 
         private void frmDotaColor_Load(object sender, EventArgs e)
         {
+            byte[] fontData = Properties.Resources.chat;
+            IntPtr fontPtr = System.Runtime.InteropServices.Marshal.AllocCoTaskMem(fontData.Length);
+            System.Runtime.InteropServices.Marshal.Copy(fontData, 0, fontPtr, fontData.Length);
+            uint dummy = 0;
+            fonts.AddMemoryFont(fontPtr, Properties.Resources.chat.Length);
+            AddFontMemResourceEx(fontPtr, (uint)Properties.Resources.chat.Length, IntPtr.Zero, ref dummy);
+
+            fontNormal = new Font(fonts.Families[0], 12F, FontStyle.Bold);
+
+            fontData = Properties.Resources.chatBold;
+            fonts.AddMemoryFont(fontPtr, Properties.Resources.chatBold.Length);
+            AddFontMemResourceEx(fontPtr, (uint)Properties.Resources.chatBold.Length, IntPtr.Zero, ref dummy);
+
+            fontBold = new Font(fonts.Families[0], 12F, FontStyle.Bold);
+
+            fontData = Properties.Resources.chatSemibold;
+            fonts.AddMemoryFont(fontPtr, Properties.Resources.chatSemibold.Length);
+            AddFontMemResourceEx(fontPtr, (uint)Properties.Resources.chatSemibold.Length, IntPtr.Zero, ref dummy);
+
+            fontSemibold = new Font(fonts.Families[0], 12F, FontStyle.Bold);
+
+            fontData = Properties.Resources.chatLight;
+            fonts.AddMemoryFont(fontPtr, Properties.Resources.chatLight.Length);
+            AddFontMemResourceEx(fontPtr, (uint)Properties.Resources.chatLight.Length, IntPtr.Zero, ref dummy);
+
+            fontLight = new Font(fonts.Families[0], 11F, FontStyle.Bold);
+
+            System.Runtime.InteropServices.Marshal.FreeCoTaskMem(fontPtr);
+
             txtUserTextEntry.Font = fontSemibold;
             lblHeroName.Font = lblHeroNameBlack.Font = lblPreviewText.Font = lblPreviewTextBlack.Font = fontNormal; 
 
