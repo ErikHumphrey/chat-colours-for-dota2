@@ -134,56 +134,7 @@ header h1:before {
   background-size: contain;
 }
 
-header h1:after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 12.8rem;
-  height: 12.8rem;
-  top: 0;
-  left: 50%;
-  z-index: 5;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  background: transparent;
-  border-radius: 100%;
-  -webkit-box-shadow: 0 0 0.6rem #f76b1c;
-  box-shadow: 0 0 0.6rem #f76b1c;
-}
-
-header h1 strong {
-  display: block;
-  font: 100 6rem/1 "FiraSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-align: center;
-}
-
-header h1 span {
-  display: block;
-  font: bold 1.6rem/1.25 "FiraSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-align: center;
-}
-
-.screenshot {
-  margin: 0 auto -10rem;
-  background: #333;
-}
-
-.screenshot figure {
-  position: relative;
-  max-width: 90%;
-  top: -14rem;
-  margin: 0 auto;
-}
-
-.screenshot figure img {
-  display: block;
-  width: 100%;
-  max-width: 64rem;
-  margin: 0 auto;
-  -webkit-box-shadow: 0 0 2rem rgba(0,0,0,0.25);
-  box-shadow: 0 0 2rem rgba(0,0,0,0.25);
-}
+header 
 
 .links {
   margin: 0 auto;
