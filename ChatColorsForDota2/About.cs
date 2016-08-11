@@ -34,12 +34,12 @@ namespace ColouredTextForDota2
 
         private void btnSourceCode_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://github.com/ErikHumphrey/colored-text-for-dota2");
+            System.Diagnostics.Process.Start("https://github.com/ErikHumphrey/chat-colors-for-dota2");
         }
 
         private void btnDonate_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://paypal.me/ErikHumphrey");
+            System.Diagnostics.Process.Start("https://paypal.me/ErikHumphrey/2");
         }
     }
 }
