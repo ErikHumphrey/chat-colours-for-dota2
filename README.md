@@ -1,9 +1,7 @@
-![icon](https://a.pomf.cat/quyoqe.png)
+# No longer works as of Dota 2 7.00
 
-# Chat Colors for Dota 2
+## Chat Colors for Dota 2
 Type coloured text into Dota 2's in-game chat.
-
-![screenshot of CCfD2](http://a.pomf.cat/lriavm.png)
 
 ##What is this?
 
