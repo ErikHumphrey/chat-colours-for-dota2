@@ -3,7 +3,7 @@
 ## Chat Colors for Dota 2
 Type coloured text into Dota 2's in-game chat.
 
-##What is this?
+## What was this?
 
 Chat Colors for Dota 2 facilitates adding color to your chat in Dota 2. Normally you would have to use a hex editor to find the proper colors to paste into chat, but this program makes it easier. Coded in C# and powered by .NET Framework 4.5, for Windows.
 
